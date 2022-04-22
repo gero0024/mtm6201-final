@@ -110,16 +110,30 @@ body button{
 
 #return{
     position: fixed;
+    height: 60px;
+    overflow: hidden;
     bottom: 28px;
     right: 28px;
     display: flex;
     flex-direction: column;
+    transition-duration: 350ms;
+    transition-timing-function: ease-in-out;
+}
+
+#return:hover{
+    height: 160px;
+}
+
+#return::after{
+    content: ' ';
+    height: 100vh;
+    color: #DB162F;
 }
 
 /*----------------------------------------TRIANGLES------------------------------------------*/
 
 .triangles{
-    fill: #f5f5f5;
+    fill: rgba(255, 255, 255, 0.5);
     display: flex;
     flex-direction: column;
     justify-content: center;
