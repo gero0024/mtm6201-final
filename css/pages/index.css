@@ -262,6 +262,25 @@ body button{
 
 
 
+.piece-1::before, .piece-2::before, .piece-3::before, .piece-4::before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background: rgba(20, 20, 20, .5);
+    border-top: solid 5px #DB162F;
+    height: 100%;
+    width: 100%;
+    opacity: 0;  
+    transition: inherit;
+}
+
+.piece-1:hover::before, .piece-2:hover::before, .piece-3:hover::before, .piece-4:hover::before{
+    opacity: 100;  
+}
+
+
+
 
 .piece-1:hover{
     border: 10px #DB162F solid;
