@@ -54,7 +54,11 @@ table {
 body{
     max-width: 100%;
     background-color: #202020;
-    font-family: 'Saira Condensed';
+    font-family: 'Mulish', sans-serif;
+}
+
+body p{
+    color: #f5f5f5;
 }
 
 body img{
@@ -68,6 +72,37 @@ body a{
 body button{
     background-color: rgba(0, 0, 0, 0.7);
     border: solid 2px #DB162F;
+}
+
+
+/*--------------------------------------------------------------------------------------------
+--------------------------------------------TOP-----------------------------------------------
+--------------------------------------------------------------------------------------------*/
+
+#mainbanner{
+    position: relative;
+    height: 100vh;
+}
+
+.main-tank h1{
+    position: absolute;
+}
+
+#party{
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    right: 50%;
+    transform: translate(-50%, -60%);
+    z-index: 1;
+    width: 25em;
+    padding: 20px;
+}
+
+#party a{
+    color: #f5f5f5;
+    font-family: 'Rajdhani' sans-serif;
+    font-size: 2em;
 }
 
 
@@ -86,10 +121,16 @@ body button{
 }
 
 .topmenu{
+    position: absolute;
+    top: 0;
+    right: 0%;
+    left: 0%;
     display: flex;
 	justify-content: space-between;
-	padding: 5px 10px 5px 10px;
+	padding: 10px 15px 10px 15px;
     font-family: 'Rajdhani' sans-serif;
+    z-index: 2;
+    border-bottom: #f5f5f5 2px solid;
 }
 
 .topmenu li a{
@@ -123,9 +164,6 @@ body button{
     color: #DB162F;
 }
 
-#party{
-    display: none;
-}
 
 /*--------------------------------------------------------------------------------------------
 ------------------------------------------RETURN----------------------------------------------
@@ -197,7 +235,7 @@ body button{
 
 .footer{
     text-align: center;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: 'Mulish' sans-serif;
 }
 
 .social-links{
@@ -209,13 +247,34 @@ body button{
 
 .social-links a{
     color: #f5f5f5;
-    transition-duration: 200ms;
+    position: relative;
+    font-size: 1.25em;
+    font-family: 'Rajdhani';
+    transition-duration: 350ms;
     transition-timing-function: ease-in-out;
 }
 
+.social-links a::before{
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(0%, -50%);
+    background: #DB162F;
+    height: 2.5px;
+    width: 0%;
+    transition: inherit;
+}
+
+
+
 .social-links a:hover{
     color: #DB162F;
-    text-decoration: line-through; 
+}
+
+.social-links a:hover::before{
+    left: 0;
+    width: 100%;
 }
 
 .copy-info{
