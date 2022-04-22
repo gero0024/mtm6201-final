@@ -81,11 +81,18 @@ body button{
 
 #mainbanner{
     position: relative;
-    height: 100vh;
 }
 
 .main-tank h1{
     position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.7);
+    font-size: 5em;
+    font-weight: 900;
+    -webkit-text-stroke: #f5f5f5 3px solid;
 }
 
 #party{
@@ -179,6 +186,7 @@ body button{
     flex-direction: column;
     transition-duration: 350ms;
     transition-timing-function: ease-in-out;
+    z-index: 5;
 }
 
 #return:hover{
@@ -194,7 +202,6 @@ body button{
     border-top: solid 5px #DB162F;
     height: 50px;
     width: 100px;
-
     animation-duration: 1s;
     animation-iteration-count: infinite;
     animation-timing-function: ease-in-out;
@@ -227,6 +234,54 @@ body button{
     grid-template-rows: repeat(2, 1fr);
 }
 
+.piece-1, .piece-2, .piece-3, .piece-4{
+    position: relative;
+    border: 3px #505050 solid;
+    transition-duration: 250ms;
+    transition-timing-function: ease-in-out;
+}
+
+.piece-1 button, .piece-2 button, .piece-3 button, .piece-4 button{
+    color: #DB162F;
+    padding: 20px 50px 20px 50px;
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 2em;
+    
+}
+
+.image-content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    width: 80%;
+}
+
+
+
+
+.piece-1:hover{
+    border: 10px #DB162F solid;
+}
+
+
+.piece-2:hover{
+    border: 10px #DB162F solid;
+}
+
+.piece-3:hover{
+    border: 10px #DB162F solid;
+}
+
+.piece-4:hover{
+    border: 10px #DB162F solid;
+}
+
+
+
 
 
 /*--------------------------------------------------------------------------------------------
@@ -239,17 +294,19 @@ body button{
 }
 
 .social-links{
-    padding: 15px 15px 25px 15px;
+    padding: 15px;
     display: flex;
     justify-content: space-between;
     color: #f5f5f5;
+    border-top: #f5f5f5 2px solid;
+    margin-top: 10px;
 }
 
 .social-links a{
     color: #f5f5f5;
     position: relative;
     font-size: 1.25em;
-    font-family: 'Rajdhani';
+    font-family: 'Rajdhani', sans-serif;
     transition-duration: 350ms;
     transition-timing-function: ease-in-out;
 }
