@@ -81,13 +81,9 @@ body a{
 }
 
 .topmenu{
-    font-size: 1.25em;
-    width: 100%;
-    position: absolute;
     display: flex;
 	justify-content: space-between;
-    background-color: #DB162F;
-    border-bottom: #f5f5f5 2px solid;
+	padding: 5px 10px 5px 10px;
 }
 
 .topmenu li a{
@@ -100,6 +96,31 @@ body a{
 }
 
 #party{
-    position: absolute;
+    display: none;
 }
+
+
+
+
+/*--------------------------------------------------------------------------------------------
+------------------------------------------FOOTER----------------------------------------------
+--------------------------------------------------------------------------------------------*/
+
+.footer h2{
+    text-align: center;
+}
+
+footer{
+
+}
+
+.social-links{
+    display: flex;
+}
+
+.copy-info{
+    display: flex;
+}
+
+
 
