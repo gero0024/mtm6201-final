@@ -1,0 +1,308 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*--------------------------------------------------------------------------------------------
+----------------------------------------CODE RE-START-----------------------------------------
+--------------------------------------------------------------------------------------------*/
+
+body{
+    max-width: 100%;
+    background-color: #202020;
+    font-family: 'Mulish', sans-serif;
+}
+
+
+body img{
+    max-width: 100%;
+}
+
+body a{
+    text-decoration: none;
+}
+
+body button{
+    background-color: rgba(0, 0, 0, 0.7);
+    border: solid 2px #DB162F;
+}
+
+
+/*--------------------------------------------------------------------------------------------
+--------------------------------------------TOP-----------------------------------------------
+--------------------------------------------------------------------------------------------*/
+
+#subbanner{
+    position: relative;
+    opacity: 0.7;
+}
+
+.sub-tank h1{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 100%;
+    color: #f10c2a;
+    font-family: 'Rajdhani', sans-serif; 
+    font-size: 5em;
+    font-weight: 500; 
+}
+
+
+
+/*--------------------------------------------------------------------------------------------
+--------------------------------------------NAV-----------------------------------------------
+--------------------------------------------------------------------------------------------*/
+
+.top{
+    position: relative;
+}
+
+.topmenu{
+    position: absolute;
+    top: 0;
+    right: 0%;
+    left: 0%;
+    display: flex;
+	justify-content: space-between;
+	padding: 10px 15px 10px 15px;
+    font-family: 'Rajdhani' sans-serif;
+    z-index: 2;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-bottom: #f5f5f5 2px solid;
+}
+
+.topmenu li a{
+    color: #f5f5f5;
+    position: relative;
+    font-size: 1.5em;
+    font-family: 'Rajdhani';
+    transition-duration: 350ms;
+    transition-timing-function: ease-in-out;
+}
+
+.topmenu li a::before{
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(0%, -50%);
+    background: #DB162F;
+    height: 2.5px;
+    width: 0%;
+    transition: inherit;
+}
+
+.topmenu li a:hover::before{
+    left: 0;
+    width: 100%;
+}
+
+
+.topmenu li a:hover{
+    color: #DB162F;
+}
+
+
+/*--------------------------------------------------------------------------------------------
+------------------------------------------RETURN----------------------------------------------
+--------------------------------------------------------------------------------------------*/
+
+#return{
+    position: fixed;
+    height: 60px;
+    overflow: hidden;
+    bottom: 28px;
+    right: 28px;
+    display: flex;
+    flex-direction: column;
+    transition-duration: 350ms;
+    transition-timing-function: ease-in-out;
+    z-index: 5;
+}
+
+#return:hover{
+    height: 160px;
+}
+
+#return::after{
+    content: 'rectanlge';
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background: rgba(219, 22, 47, .5);
+    border-top: solid 5px #DB162F;
+    height: 50px;
+    width: 100px;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+
+}
+
+
+
+
+/*----------------------------------------TRIANGLES------------------------------------------*/
+
+
+.triangles{
+    fill: rgba(255, 255, 255, 0.5);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+
+
+/*--------------------------------------------------------------------------------------------
+----------------------------------------MAIN CONTENT------------------------------------------
+--------------------------------------------------------------------------------------------*/
+
+
+
+
+
+
+
+
+/*--------------------------------------------------------------------------------------------
+------------------------------------------FOOTER----------------------------------------------
+--------------------------------------------------------------------------------------------*/
+
+.footer{
+    text-align: center;
+    font-family: 'Mulish' sans-serif;
+}
+
+.social-links{
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    color: #f5f5f5;
+    border-top: #f5f5f5 2px solid;
+    margin-top: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.tai{
+    display: flex;
+    justify-content: space-between;
+    gap: 100px;
+}
+
+.social-links a{
+    color: #f5f5f5;
+    position: relative;
+    font-size: 1.25em;
+    font-family: 'Rajdhani', sans-serif;
+    transition-duration: 350ms;
+    transition-timing-function: ease-in-out;
+}
+
+.social-links a::before{
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(0%, -50%);
+    background: #DB162F;
+    height: 2.5px;
+    width: 0%;
+    transition: inherit;
+}
+
+
+
+.social-links a:hover{
+    color: #DB162F;
+}
+
+.social-links a:hover::before{
+    left: 0;
+    width: 100%;
+}
+
+.copy-info{
+    order: -1;
+}
+
+
+
+/*--------------------------------------------------------------------------------------------
+------------------------------------------ANIMATIONS------------------------------------------
+--------------------------------------------------------------------------------------------*/
+
+
+@keyframes scan{
+
+    0%{
+        height: 0px;
+    }
+
+    20%{
+        height: 50px;
+    }
+
+    40%{
+        height: 100px;
+    }
+
+    60%{
+        height: 150px;
+    }
+
+    100%{
+        height: 200px;
+    }
+    
+
+}
+
