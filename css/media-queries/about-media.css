@@ -18,31 +18,61 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    gap: 10px;
     text-align: center;
     margin-top: 10px;
 }
 
 .social-links a{
-    font-size: 1.0em;
+    font-size: 1em;
 }
-
-
-
-
-.social-links a:hover{
-    color: #DB162F;
-}
-
 
 
 .copy-info{
     font-size: 1em;
-    order: -1;
+    order: 1;
+}
+
+
+
 }
 
 
 
 
-   
 
-}
+
+/*-----------------------------------------S------------------------------------------*/
+
+
+@media screen and (max-width: 1250px){
+
+    /*--------------------------------------------------------------------------------------------
+    ------------------------------------------FOOTER----------------------------------------------
+    --------------------------------------------------------------------------------------------*/
+    
+    
+    .social-links{
+        padding: 15px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 10px;
+        text-align: center;
+        margin-top: 10px;
+ 
+    }
+    
+    .social-links a{
+        font-size: 1.2em;
+    }
+    
+    
+    .copy-info{
+        font-size: 1em;
+        order: 1;
+    }
+    
+    
+    
+    }
