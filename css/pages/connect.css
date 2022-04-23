@@ -206,6 +206,107 @@ body button{
 ----------------------------------------MAIN CONTENT------------------------------------------
 --------------------------------------------------------------------------------------------*/
 
+.content{
+    position: relative;
+}
+
+.connect-content{
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%); 
+
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      text-align: center;
+
+      width: 90%;
+}
+
+
+
+
+
+
+
+
+
+
+
+/*--------------------------------------------------------------------------------------------
+----------------------------------------FORM-FIELDO------------------------------------------
+--------------------------------------------------------------------------------------------*/
+
+.labels{
+    display: flex;
+    flex-direction: column;
+    gap: 2.5px;
+    text-align: center;
+}
+
+.labels input{
+    background-color: rgba(0, 0, 0, 0.8);
+    border: solid 2px #DB162F;
+
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 2em;
+
+    padding: 10px 10px 10px 20px;
+}
+
+.labels input::placeholder{
+    color: #DB162F;
+}
+
+.labels textarea{
+    resize: none;
+
+    background-color: rgba(0, 0, 0, 0.8);
+    border: solid 2px #DB162F;
+
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 2em;
+
+    padding: 10px 10px 100px 20px;
+}
+
+.labels textarea::placeholder{
+    color: #DB162F;
+}
+
+#sendbutton{
+    margin-top: 5px;
+    background-color: rgba(0, 0, 0, 0.8);
+    border: solid 2px #DB162F;
+    width: 100%;
+
+    color: #DB162F;
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 2em;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
