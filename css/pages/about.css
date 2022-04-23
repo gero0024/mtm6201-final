@@ -79,12 +79,12 @@ body button{
 --------------------------------------------TOP-----------------------------------------------
 --------------------------------------------------------------------------------------------*/
 
-#mainbanner{
+#subbanner{
     position: relative;
     opacity: 0.7;
 }
 
-.main-tank h1{
+.sub-tank h1{
     position: absolute;
     top: 50%;
     left: 50%;
@@ -94,32 +94,8 @@ body button{
     color: #f10c2a;
     font-family: 'Rajdhani', sans-serif; 
     font-size: 5em;
-    font-weight: 500;
-   
-    
+    font-weight: 500; 
 }
-
-#party{
-    position: absolute;
-    top: 70%;
-    left: 50%;
-    right: 50%;
-    transform: translate(-50%, -60%);
-    z-index: 1;
-    width: 25em;
-    padding: 20px;
-}
-
-#party a{
-    color: #f5f5f5;
-    font-family: 'Rajdhani', sans-serif;
-    font-size: 2em;
-}
-
-
-
-
-
 
 
 
@@ -233,72 +209,11 @@ body button{
 ----------------------------------------MAIN CONTENT------------------------------------------
 --------------------------------------------------------------------------------------------*/
 
-.pieces{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-}
-
-.piece-1, .piece-2, .piece-3, .piece-4{
-    position: relative;
-    border: 3px #505050 solid;
-    transition-duration: 250ms;
-    transition-timing-function: ease-in-out;
-}
-
-.piece-1 button, .piece-2 button, .piece-3 button, .piece-4 button{
-    color: #DB162F;
-    padding: 20px 50px 20px 50px;
-    font-family: 'Rajdhani', sans-serif;
-    font-size: 2em;
-    
-}
-
-.image-content{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    text-align: center;
-    width: 90%;
-    height: 100%;
-    font-size: 2em; 
-    opacity: 0;
-    transition: inherit;
-}
-
-
-.image-content:hover{
-    opacity: 1;
-}
 
 
 
-.piece-1::before, .piece-2::before, .piece-3::before, .piece-4::before{
-    content: '';
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    background: rgba(20, 20, 20, .5);
-    border-top: solid 5px #DB162F;
-    height: 100%;
-    width: 100%;
-    opacity: 0; 
-    transition: inherit;
-}
-
-.piece-1:hover::before, .piece-2:hover::before, .piece-3:hover::before, .piece-4:hover::before{
-    opacity: 100;  
-}
 
 
-
-.piece-1:hover, .piece-2:hover, .piece-3:hover, .piece-4:hover{
-    border: 10px #DB162F solid;
-}
 
 
 /*--------------------------------------------------------------------------------------------
@@ -318,6 +233,12 @@ body button{
     border-top: #f5f5f5 2px solid;
     margin-top: 10px;
     background-color: rgba(0, 0, 0, 0.5);
+}
+
+.tai{
+    display: flex;
+    justify-content: space-between;
+    gap: 100px;
 }
 
 .social-links a{
