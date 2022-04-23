@@ -51,6 +51,10 @@ table {
 ----------------------------------------CODE RE-START-----------------------------------------
 --------------------------------------------------------------------------------------------*/
 
+html{
+    scroll-behavior: smooth;
+}
+
 body{
     max-width: 100%;
     background-color: #202020;
@@ -156,12 +160,12 @@ body button{
 
 #return{
     position: fixed;
+
     height: 60px;
     overflow: hidden;
     bottom: 28px;
     right: 28px;
-    display: flex;
-    flex-direction: column;
+  
     transition-duration: 350ms;
     transition-timing-function: ease-in-out;
     z-index: 5;
@@ -171,19 +175,44 @@ body button{
     height: 160px;
 }
 
-#return::after{
-    content: 'rectanlge';
+#return:hover:before{
+    content: '';
+
     position: absolute;
     bottom: 0;
     right: 0;
-    background: rgba(219, 22, 47, .5);
-    border-top: solid 5px #DB162F;
+
+    box-shadow: inset 20px 15px 25px 5px rgba(219, 22, 47, 0.8);
+
+    border-top: rgba(219, 22, 47, 0.8) solid 10px;
+
     height: 50px;
     width: 100px;
-    animation-duration: 1s;
-    animation-iteration-count: infinite;
-    animation-timing-function: ease-in-out;
 
+    animation-name: scan;
+    animation-duration: 1.2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+
+}
+
+#scanlines{
+    width: 65.5px;
+    height: 60px;
+
+    position: fixed;
+    bottom: 28px;
+    right: 28px;
+
+    
+    transition-duration: 350ms;
+    transition-timing-function: ease-in-out;
+
+    opacity: 0.6;
+}
+
+#scanlines:hover{
+    height: 160px;
 }
 
 
@@ -193,7 +222,7 @@ body button{
 
 
 .triangles{
-    fill: rgba(255, 255, 255, 0.5);
+    fill: rgba(255, 255, 255, 0.7);
     display: flex;
     flex-direction: column;
     justify-content: center;
