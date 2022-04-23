@@ -209,6 +209,10 @@ body button{
 ----------------------------------------MAIN CONTENT------------------------------------------
 --------------------------------------------------------------------------------------------*/
 
+#connect{
+    opacity: 0.7;
+}
+
 .content{
     position: relative;
 }
@@ -230,7 +234,7 @@ body button{
 .connect-content h2{
  
     font-family: 'Rajdhani', sans-serif;
-    font-size: 5em;
+    font-size: 3.5em;
     font-weight: 500;
     color: #DB162F;
 
@@ -240,15 +244,8 @@ body button{
 
 .ats-content{
     font-size: 1.5em;
+    font-weight: 450;
 }
-
-
-
-
-
-
-
-
 
 
 
@@ -269,9 +266,9 @@ body button{
     color: #f5f5f5;
 
     font-family: 'Rajdhani', sans-serif;
-    font-size: 2em;
+    font-size: 1.75em;
 
-    padding: 10px 10px 10px 20px;
+    padding: 7.5px 7.5px 7.5px 15px;
 }
 
 .labels input::placeholder{
@@ -286,9 +283,9 @@ body button{
     color: #f5f5f5;
 
     font-family: 'Rajdhani', sans-serif;
-    font-size: 2em;
+    font-size: 1.75em;
 
-    padding: 10px 10px 100px 20px;
+    padding: 7.5px 7.5px 75px 15px;
 }
 
 .labels textarea::placeholder{
@@ -305,7 +302,7 @@ body button{
 
     color: #DB162F;
     font-family: 'Rajdhani', sans-serif;
-    font-size: 2em;
+    font-size: 1.75em;
 
     padding: 10px 0px 10px 0px;
 

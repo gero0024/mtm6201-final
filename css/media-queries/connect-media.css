@@ -4,19 +4,21 @@
 
 /*----------------------------------------MAIN CONTENT---------------------------------------*/
 
-
+.connect{
+    transition-duration: 350ms;
+    transition-timing-function: ease-in-out;
+}
 
 
 
 
 /*------------------------------------------FOOTER------------------------------------------*/
 
-
-
 .social-links p{
     transition-duration: 350ms;
     transition-timing-function: ease-in-out;
 }
+
 
 
 
