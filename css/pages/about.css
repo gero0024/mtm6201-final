@@ -209,6 +209,32 @@ body button{
 ----------------------------------------MAIN CONTENT------------------------------------------
 --------------------------------------------------------------------------------------------*/
 
+#office{
+    opacity: 0.5;
+}
+
+.content{
+    position: relative;
+}
+
+.about-content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 1.1em;
+    font-weight: 500;
+}
+
+
+
 
 
 
