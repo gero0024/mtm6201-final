@@ -110,20 +110,24 @@ body button{
     transform: translate(-50%, -60%);
 
     z-index: 1;
-    width: 25em;
+    width: 10em;
     padding: 20px;
-}
 
-#party a{
     color: #f5f5f5;
     font-family: 'Rajdhani', sans-serif;
-    font-size: 2em;
+    font-size: 1.5em;
+
+    transition-duration: 350ms;
+    transition-timing-function: ease-in-out;
+
+    cursor: pointer;
 }
 
 #party:hover{
     background-color: #DB162F;
     color: #202020;
 }
+
 
 
 
@@ -286,8 +290,22 @@ body button{
     padding: 20px 50px 20px 50px;
     font-family: 'Rajdhani', sans-serif;
     font-size: 2em;
-    
+
+    transition-duration: 250ms;
+    transition-timing-function: ease-in-out;
+
+    cursor: pointer;
 }
+
+.piece-1 button:hover, .piece-2 button:hover, .piece-3 button:hover, .piece-4 button:hover{
+    background-color: #DB162F;
+    color: #202020;
+    padding: 20px 50px 20px 50px;
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 2em;
+}
+
+
 
 .image-content{
     position: absolute;
