@@ -2,24 +2,38 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CYBER DEMON DISCO PARTY</title>
+    <title>ABOUT - CHROME PLATED CHAOS</title>
+
+    <!--CSS-->
+
     <link href="css/pages/about.css" rel="stylesheet">
     <link href="css/media-queries/about-media.css" rel="stylesheet">
 
-    <!--FONT-->
+
+   <!--FONTS-->
 
     <!--RAJDHANI-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500&display=swap" rel="stylesheet">
- 
 
-    <!--MULISH-->
+    <!--ORBITRON-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200;0,300;0,400;0,500;1,200;1,300;1,400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600&display=swap" rel="stylesheet">
+
+    <!--JURA-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jura:wght@300;400;500;600;700&family=Orbitron:wght@400;500;600&display=swap" rel="stylesheet">
+
+    <!--SAIRA EXTRA CONDENSED-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600&family=Saira+Extra+Condensed:wght@100;200;300;400;500&display=swap" rel="stylesheet">
 
 </head>
+
 <body>
 
     <div class="contanier">
@@ -33,44 +47,56 @@
                       <ul class="topmenu">
                           <li><a href="index.html">HOME</a></li>
                           <li><a href="portfolio.html">PORTFOLIO</a></li>
-                          <li><a href="connect.html">CONNECT</a></li>
+                          <li><a href="connect.html">CONTACT</a></li>
                           <li><a href="about.html">ABOUT</a></li>
                       </ul>
     
                   </nav>
 
-                  <div class="sub-tank">
-                    <img id="subbanner" src="images/subbanner.jpg" alt="subbanner">
-                    <h1>ABOUT</h1>
-                  </div>
-    
-
-                  <button id="return">
-                      
-                    <a href="#top">
-
-                        <img src="images/scanlines.png" alt="scanlines" id="scanlines">
-
-
-                        <div class="triangles">
-                            <svg class="triangle-1" width="50" height="50">
-                                <polygon points="25,5 5,45 45,45"></polygon>
-                            </svg>
-  
-                            <svg class="triangle-2" width="50" height="50">
-                                <polygon points="25,5 5,45 45,45"></polygon>
-                            </svg>
-  
-                            <svg class="triangle-3" width="50" height="50">
-                                <polygon points="25,5 5,45 45,45"></polygon>
-                            </svg>   
-                        </div>
-
-                    </a>
-
-              </button>
+                  <button class="drop-menu">
+                    <div class="bar"></div>
+                  </button>
 
            </header>
+
+           <nav class="mobile-menu">
+                <a class="option" href="index.html">HOME</a>
+                <a class="option" href="portfolio.html">PORTFOLIO</a>
+                <a class="option" href="connect.html">CONTACT</a>
+                <a class="option" href="about.html">ABOUT</a>
+           </nav>
+
+
+           <!---->
+
+           <a href="#top">
+            <button id="return">
+                <div id="return-contain">
+                    
+                    <div class="triangle-1"></div>
+                    <h4 id="return-text">RETURN</h4>
+            
+                </div>
+            </button>
+           </a>
+
+
+           <!---->
+
+           <button id="pause">
+            <div class="triangle-2"></div>
+
+            <!--
+
+                  <div id="pause-symbol">
+                <div class="rectangle"></div>
+                <div class="rectangle"></div>
+            </div>
+           </button>
+
+
+            -->
+          
             
         </div>
 
@@ -80,34 +106,64 @@
 
         <div class="content">
 
-            <img src="images/office.jpg" alt="office" id="office">
+            <video autoplay loop muted plays-inline id="marble-video">
+                <source src="animations/Marble-Background-POST-1.mp4" type="video/mp4">
+            </video>
+
+            <h1 id="page-name">ABOUT</h1>
 
             <div class="about-content">
 
                 <div class="history">
-                    <h2>HISTORY</h2>
+
+                    <h2 id="genesis">GENESIS</h2>
     
-                    <p>
-                        Founded in 2020 by Tchevara Gerome. 
-                        CYBERDEMONDISCOPARY is a design studio that brings 
-                        it's unapologetic style to every project in order to create the best pieces. 
+                    <p class="brand-info">
+                        A unified base for all CYBER DEMON DISCO PARTY and personal projects. CHROME PLATED CHAOS sets out to
+                        provide an alternative style for those looking to make their projects stand out in steel. Making
+                        cool things for cool people is the mission, and the job is to deliver on that promise every step of the way.      
                     </p>
+
+                    <button id="call-to-action">CONNECT</button>
                 </div>
-    
-       
+
+                
+   
                 <div class="services">
-                    
-                    <p>
-                        The work done is mainly comissions and designing. 
-                    </p>
-    
-                    <h2>SERVICES</h2>
-    
-                    <ul>
-                        <li>COMISSIONS</li>
-                        <li>DESIGNS</li>
-                        <li>PRINT SELLING *COMMING SOON*</li>
-                    </ul>
+
+                    <div class="service">
+
+                        <h2 class="service-name">EDITING</h2>
+
+                        <img src="images/portfolio-pieces/gote-thumbnail-1.JPG" alt="placeholder" class="service-img">
+
+                        <p class="serive-description">Making edits for music videos. Editing for promotional videos, and storyboarding projects.</p>
+
+                    </div>
+
+                    <!---->
+
+                    <div class="service">
+
+                        <h2 class="service-name">ILLUSTRATION</h2>
+
+                        <img src="images/portfolio-pieces/shattered-soul-sketch.png" alt="placeholder" class="service-img">
+
+                        <p class="serive-description">Creating concept art, album art, or gerneral pieces for personal or professional use.</p>
+
+                    </div>
+
+                    <!---->    
+
+                    <div class="service">
+
+                        <h2 class="service-name">MOTION GRAPHICS</h2>
+
+                        <img src="images/portfolio-pieces/retro-computer-thumbnail.JPG" alt="placeholder" class="service-img">
+
+                        <p class="serive-description">Adding flare to exisiting artworks or creating motion graphics from scratch.</p>
+
+                    </div>
     
                 </div>
 
@@ -120,37 +176,35 @@
 
         <!--==========================FOOTER==============================-->
 
+        
+        <div id="footer">
 
-      <div id="footer">
-
-        <footer>
-
-            <div class="social-links">
-
-                <span class="tai">
-                    <h3 class="app"><a href="https://www.instagram.com/" target="_blank">[INSTAGRAM]</a></h3>
-
-                    <h3 class="app"><a href="https://www.artstation.com/?sort_by=community" target="_blank">[ARTSTATION]</a></h3>
-
-                    <h3 class="app"><a href="https://twitter.com/home" target="_blank">[TWITTER]</a></h3>
-
-                </span>
-
-
-                <p class="copy-info">©Copyright CYBERDEMONDISCOPARTY, 2022</p>
-
-                <p>All images are placeholders taken from <a href="https://unsplash.com/" target="_blank">Unsplash</a></p>
-
-            </div>
-
-        </footer>    
-
-       </div>
+            <footer>
+    
+                <div id="footer-info">
+    
+                    <span class="social-links">
+                        <h3 class="app"><a href="https://www.instagram.com/cyberdemondiscoparty/?hl=en" target="_blank">[INSTAGRAM]</a></h3>
+    
+                        <h3 class="app"><a href="https://twitter.com/Mamudoom" target="_blank">[TWITTER]</a></h3>
+    
+                        <h3 class="app"><a href="https://www.artstation.com/?sort_by=community" target="_blank">[ARTSTATION]</a></h3>
+                    </span>
+    
+                    <p class="email">EMAIL - cyberdemondiscoparty@gmail.com</p>
+    
+                    <p class="date">UPDATED, DECEMBER 2023</p>
+    
+                </div>
+    
+            </footer>    
+    
+        </div>
 
   </div>
 
-   
-
+ 
+<script src="js/about.js"></script>  
 
 </body>
 

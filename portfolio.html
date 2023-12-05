@@ -2,16 +2,31 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CYBER DEMON DISCO PARTY</title>
+    <title>PORTFOLIO - CHROME PLATED CHAOS</title>
     <link href="css/pages/portfolio.css" rel="stylesheet">
     <link href="css/media-queries/portfolio-media.css" rel="stylesheet">
 
-    <!--FONT-->
+    <!--FONTS-->
 
     <!--RAJDHANI-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500&display=swap" rel="stylesheet">
+
+    <!--ORBITRON-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600&display=swap" rel="stylesheet">
+
+    <!--JURA-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jura:wght@300;400;500;600;700&family=Orbitron:wght@400;500;600&display=swap" rel="stylesheet">
+
+    <!--SAIRA EXTRA CONDENSED-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600&family=Saira+Extra+Condensed:wght@100;200;300;400;500&display=swap" rel="stylesheet">
  
 
     <!--MULISH-->
@@ -33,48 +48,54 @@
                       <ul class="topmenu">
                           <li><a href="index.html">HOME</a></li>
                           <li><a href="portfolio.html">PORTFOLIO</a></li>
-                          <li><a href="connect.html">CONNECT</a></li>
+                          <li><a href="connect.html">CONTACT</a></li>
                           <li><a href="about.html">ABOUT</a></li>
                       </ul>
     
-    
                   </nav>
 
-                  <div class="sub-tank">
-                    <img id="subbanner" src="images/subbanner.jpg" alt="subbanner">
-                    <h1>PORTFOLIO</h1>
-                  </div>
-    
-
-                  <button id="return">
-
-                    <a href="#top">
-
-                        <img src="images/scanlines.png" alt="scanlines" id="scanlines">
-
-
-                        <div class="triangles">
-                            <svg class="triangle-1" width="50" height="50">
-                                <polygon points="25,5 5,45 45,45"></polygon>
-                            </svg>
-  
-                            <svg class="triangle-2" width="50" height="50">
-                                <polygon points="25,5 5,45 45,45"></polygon>
-                            </svg>
-  
-                            <svg class="triangle-3" width="50" height="50">
-                                <polygon points="25,5 5,45 45,45"></polygon>
-                            </svg>   
-                        </div>
-
-                    </a>
-                 
-              </button>
+                  <button class="drop-menu">
+                    <div class="bar"></div>
+                  </button>
 
            </header>
 
-    
+           <nav class="mobile-menu">
+                <a class="option" href="index.html">HOME</a>
+                <a class="option" href="portfolio.html">PORTFOLIO</a>
+                <a class="option" href="connect.html">CONTACT</a>
+                <a class="option" href="about.html">ABOUT</a>
+           </nav>
+
+
+           <!---->
+
+           <a href="#top">
+            <button id="return">
+                <div id="return-contain">
+                    
+                    <div class="triangle-1"></div>
+                    <h4 id="return-text">RETURN</h4>
             
+                </div>
+            </button>
+           </a>
+
+
+           <!---->
+
+           <button id="pause">
+            <div class="triangle-2"></div>
+
+            
+
+                  <div id="pause-symbol">
+                <div class="rectangle"></div>
+                <div class="rectangle"></div>
+            </div>
+           </button>
+
+
         </div>
 
       <!--==========================CONTENT-START==============================-->
@@ -83,205 +104,95 @@
 
         <div class="content">
 
-            <div class="pieces">
+            <video autoplay loop muted plays-inline id="marble-video">
+                <source src="animations/Marble-Background-POST-1.mp4" type="video/mp4">
+            </video>
 
-                <div class="piece-1">
+            <h2 id="page-name">PORTFOLIO</h2>
 
-                    <input type="checkbox" id="test-1">
-                    <label for="test-1"><img src="images/piece-1.jpg"></label>
+            <!---->
 
-                   
-                    <div class="image-content">
+            <div id="display-case">
+                <img src="images/portfolio-pieces/js-images/img-1-1.png" alt="//GHOST GIRL. Illustration turned animation through the use of After Effects" class="piece" class="img">
 
-                            <h2>"STOCK IMAGE"</h2>
-    
-                            <h3>CLIENT - JOHN DOE</h3>
-    
-                            <div class="detials">
-                               <h3>3066 x 3921</h3>
-    
-                               <h3>04 - 20 - 2022</h3>
-                           </div>
-    
-                           <p class="lorn">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut finibus tellus quis leo fringilla vestibulum.</p>
+                <img src="images/portfolio-pieces/js-images/img-3-1.JPG" alt="//MIA. Mock up for business cards with extra flare added to them" class="piece" class="img">
 
-                    </div>        
+                <img src="images/portfolio-pieces/js-images/img-4-1.jpg" alt="//SHATTERED SOUL. Personal illustration made with Fire Alpaca" class="piece" class="img">
 
-                </div>
-
-                
-            
-                <div class="piece-2">
-
-                    <input type="checkbox" id="test-2">
-                    <label for="test-2"><img src="images/piece-2.jpg"></label>
-
-                   
-                    <div class="image-content">
-
-                            <h2>"STOCK IMAGE"</h2>
-    
-                            <h3>CLIENT - JOHN DOE</h3>
-    
-                            <div class="detials">
-                               <h3>3066 x 3921</h3>
-    
-                               <h3>04 - 20 - 2022</h3>
-                           </div>
-    
-                           <p class="lorn">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut finibus tellus quis leo fringilla vestibulum.</p>
-
-                    </div>
-                   
-        
-                </div>
-
-
-
-                <div class="piece-3">
-
-                    <input type="checkbox" id="test-3">
-                    <label for="test-3"><img src="images/piece-3.jpg"></label>
-
-                   
-                    <div class="image-content">
-
-                            <h2>"STOCK IMAGE"</h2>
-    
-                            <h3>CLIENT - JOHN DOE</h3>
-    
-                            <div class="detials">
-                               <h3>3066 x 3921</h3>
-    
-                               <h3>04 - 20 - 2022</h3>
-                           </div>
-    
-                           <p class="lorn">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut finibus tellus quis leo fringilla vestibulum.</p>
-                    
-                    </div>
-
-                 
-                </div>
-
-
-
-                <div class="piece-4">
-
-                    <input type="checkbox" id="test-4">
-                    <label for="test-4"><img src="images/piece-4.jpg"></label>
-
-                   
-                    <div class="image-content">
-
-                            <h2>"STOCK IMAGE"</h2>
-    
-                            <h3>CLIENT - JOHN DOE</h3>
-    
-                            <div class="detials">
-                               <h3>3066 x 3921</h3>
-    
-                               <h3>04 - 20 - 2022</h3>
-                           </div>
-    
-                           <p class="lorn">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut finibus tellus quis leo fringilla vestibulum.</p>
-                    
-                    </div>
-
-                </div>
-
-
-
-                <div class="piece-5">
-
-                    <input type="checkbox" id="test-5">
-                    <label for="test-5"><img src="images/piece-5.jpg"></label>
-
-                   
-                    <div class="image-content">
-
-                            <h2>"STOCK IMAGE"</h2>
-    
-                            <h3>CLIENT - JOHN DOE</h3>
-    
-                            <div class="detials">
-                               <h3>3066 x 3921</h3>
-    
-                               <h3>04 - 20 - 2022</h3>
-                           </div>
-    
-                           <p class="lorn">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut finibus tellus quis leo fringilla vestibulum.</p>
-                        
-                    </div>
-
-                   
-                </div>
-
-
-
-                <div class="piece-6">
-
-                    <input type="checkbox" id="test-6">
-                    <label for="test-6"><img src="images/piece-6.jpg"></label>
-                   
-                    <div class="image-content">
-
-                            <h2>"STOCK IMAGE"</h2>
-    
-                            <h3>CLIENT - JOHN DOE</h3>
-    
-                            <div class="detials">
-                               <h3>3066 x 3921</h3>
-    
-                               <h3>04 - 20 - 2022</h3>
-                           </div>
-    
-                           <p class="lorn">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut finibus tellus quis leo fringilla vestibulum.</p>
-
-                    </div>
-                    
-    
-                </div>
+                <img src="images/portfolio-pieces/js-images/img-7.png" alt="//FALLING DOWN. Mock cover for a client's ep " class="piece" class="img">
 
             </div>
 
+            <!---->
+
+            <div id="theater">
+                <video pause loop muted plays-inline class="piece" class="video">
+                    <source src="images/portfolio-pieces/js-images/img-2.mp4" type="video/mp4">
+                </video>
+
+                <video pause loop muted plays-inline class="piece" class="video">
+                    <source src="images/portfolio-pieces/js-images/img-5-1.mp4" type="video/mp4">
+                </video>
+
+                <video pause loop muted plays-inline class="piece" class="video">
+                    <source src="images/portfolio-pieces/js-images/img-6-1.mp4" type="video/mp4">
+                </video>
+
+                <video pause loop muted plays-inline class="piece" class="video">
+                    <source src="images/portfolio-pieces/js-images/img-9.mp4" type="video/mp4">
+                </video>
+
+
+            </div>
+
+            
+
+            <div class="modal">
+                <span class="close">&times;</span>
+                <div class="modal-content">
+                    <img src="" class="modal-image">
+                    <span class="modal-text">Pussy bitches weed is all a nigga need</span>
+                </div>
+            </div>
+
+            
         </div>
 
       </main>
 
 
-        <!--==========================FOOTER==============================-->
+         <!--==========================FOOTER==============================-->
 
 
-      <div id="footer">
+         <div id="footer">
 
-        <footer>
+            <footer>
+    
+                <div id="footer-info">
+    
+                    <span class="social-links">
+                        <h3 class="app"><a href="https://www.instagram.com/" target="_blank">[INSTAGRAM]</a></h3>
+    
+                        <h3 class="app"><a href="https://twitter.com/home" target="_blank">[TWITTER]</a></h3>
+    
+                        <h3 class="app"><a href="https://www.artstation.com/?sort_by=community" target="_blank">[ARTSTATION]</a></h3>
+                    </span>
+    
+                    <p class="email">EMAIL - cyberdemondiscoparty@gmail.com</p>
+    
+                    <p class="date">UPDATED, DECEMBER 2023</p>
+    
+                </div>
+    
+            </footer>    
+    
+        </div>
 
-            <div class="social-links">
-
-                <span class="tai">
-                    <h3 class="app"><a href="https://www.instagram.com/" target="_blank">[INSTAGRAM]</a></h3>
-
-                    <h3 class="app"><a href="https://www.artstation.com/?sort_by=community" target="_blank">[ARTSTATION]</a></h3>
-
-                    <h3 class="app"><a href="https://twitter.com/home" target="_blank">[TWITTER]</a></h3>
-
-                </span>
-
-
-                <p class="copy-info">©Copyright CYBERDEMONDISCOPARTY, 2022</p>
-
-                <p>All images are placeholders taken from <a href="https://unsplash.com/" target="_blank">Unsplash</a></p>
-
-            </div>
-
-        </footer>  
-
-    </div>
 
   </div>
 
    
-
+<script src="js/portfolio.js"></script>
 
 </body>
 

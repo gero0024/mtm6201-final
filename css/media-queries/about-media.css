@@ -1,34 +1,31 @@
-/*--------------------------------------------------------------------------------------------
-------------------------------------------ANIMATIONS------------------------------------------
---------------------------------------------------------------------------------------------*/
-
-/*----------------------------------------MAIN CONTENT---------------------------------------*/
+/*----------------------------------------ANIMATIONS-----------------------------------------*/
 
 
-#office{
-    transition-duration: 350ms;
+/*-------------------------------------------HEADER------------------------------------------*/
+#page-name{
+    transition-duration: 250ms;
+    transition-timing-function: ease-in-out;  
+}
+
+/*--------------------------------------------BODY-------------------------------------------*/
+
+  #call-to-action{
+    transition-duration: 300ms;
+    transition-timing-function: ease-in-out;  
+}
+
+/*Service Options*/
+.service-name{
+    transition-duration: 300ms;
     transition-timing-function: ease-in-out;
 }
 
-.about-content{
-    transition-duration: 350ms;
+.serive-description{
+    transition-duration: 300ms;
     transition-timing-function: ease-in-out;
 }
 
 
-
-/*------------------------------------------FOOTER------------------------------------------*/
-
-
-#office{
-    transition-duration: 350ms;
-    transition-timing-function: ease-in-out;
-}
-
-.social-links p{
-    transition-duration: 350ms;
-    transition-timing-function: ease-in-out;
-}
 
 
 
@@ -37,166 +34,169 @@
 --------------------------------------------------------------------------------------------*/
 
 
-/*-----------------------------------------SMALLEST------------------------------------------*/
+/*-------------------------------------------MEDIUM------------------------------------------*/
 
+@media screen and (max-width: 850px) and (min-width: 600px){
 
-@media screen and (max-width: 700px){
-
-    /*--------------------------------------------------------------------------------------------
-    -----------------------------------------FOOTER----------------------------------------------
-    --------------------------------------------------------------------------------------------*/
-
-
-  .social-links{
-      padding: 15px;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      gap: 10px;
-      text-align: center;
-      margin-top: 10px;
-  }
-
-  .social-links a{
-      font-size: 1.1em;
-  }
-
-
-  .copy-info{
-      order: 1;
-  }
-
-} 
-
-
-
-
-
-
-/*-----------------------------------------MEDIUM-----------------------------------------------*/
-
-
-@media screen and (max-width: 1250px) and (min-width: 700px){
-
-
-    /*--------------------------------------------------------------------------------------------
-   ----------------------------------------MAIN CONTENT------------------------------------------
-   --------------------------------------------------------------------------------------------*/
-
-   #office{
-      opacity: 0.4;
-   }
-
-   .content{
-      position: relative;
-   }
-
-   .about-content{
-
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-
+    /*-------------------------------------------HEADER------------------------------------------*/
     
-      display: flex;
-      flex-direction: column;
-      text-align: center;
-      gap: 10px;
+ #page-name{
+    font-size: 850%;
+}
 
-      font-family: 'Rajdhani', sans-serif;
-      font-size: 1.4em;
-      font-weight: 500;
-      color: #DB162F;
+/*Desktop Nav*/
 
-      border-top: none;
-      padding: 5px;
-      margin: 5px;
-   }
+nav{
+    display: block;
+}
 
-
-    /*--------------------------------------------------------------------------------------------
-    ------------------------------------------FOOTER----------------------------------------------
-    --------------------------------------------------------------------------------------------*/
-    
-    
-    .social-links{
-        padding: 15px;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        gap: 10px;
-        text-align: center;
-        margin-top: 10px;
- 
-    }
-    
-    .social-links a{
-        font-size: 1.2em;
-    }
-    
-    
-    .copy-info{
-        font-size: 1em;
-        order: 1;
-    }
-    
-    
-    
- }
+.drop-menu{
+    display: none;
+}
 
 
+/*Service Options*/
+.service{
+    margin-bottom: 0.5em;
+}
 
-  /*-----------------------------------------BIGGEST---------------------------------------------*/
+.service-name{
+    font-size: 3em;
+}
+
+.serive-description{
+    font-size: 150%;
+}
+
+}
 
 
+/*-------------------------------------------LARGER------------------------------------------*/
 
+@media screen and (max-width: 1200px) and (min-width: 850px){
 
-    @media screen and (max-width: 1920px) and (min-width: 1250px){
+    /*-------------------------------------------HEADER------------------------------------------*/
 
-    /*--------------------------------------------------------------------------------------------
-    ----------------------------------------MAIN CONTENT------------------------------------------
-    --------------------------------------------------------------------------------------------*/
-
-    #office{
-      opacity: 0.3;
+    #page-name{
+        font-size: 850%;
+        -webkit-text-stroke: 1.5px #E7EBF6;
     }
 
-    .content{
-      position: relative;
+    /*Desktop Nav*/
+
+    nav{
+        display: block;
+    }
+    
+    .drop-menu{
+        display: none;
     }
 
-    .about-content{
+     /*--------------------------------------------BODY-------------------------------------------*/
 
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-
-  
-      display: flex;
-      flex-direction: column;
-      text-align: center;
-      gap: 20px;
-
-      font-family: 'Rajdhani', sans-serif;
-      font-size: 2em;
-      font-weight: 500;
-      color: #DB162F;
-
-      border-top: none;
-      padding: 5px;
-      margin: 5px;
+     #call-to-action{
+        margin-left: 15%;
+        margin-right: 15%;  
     }
+    
+   
+    
+    
+    /*Service Options*/
 
-    .history{
-        gap: 20px;
+    .service-name{
+        font-size: 1.5em;
     }
 
     .services{
-        gap: 20px;
+        display: grid;
+        grid-template-rows: repeat(1, 1fr);
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1.5%;
+        margin: 1.5%;
+    
+    }
+
+    .serive-description{
+        font-size: 100%;
+    }
+
+     /*-------------------------------------------FOOTER------------------------------------------*/
+
+     #footer-info{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        justify-content: center;
+    }
+    
     }
 
 
-}
+
+
+
+
+   /*-------------------------------------------LARGEST------------------------------------------*/ 
+    @media screen and (max-width: 1800px) and (min-width: 1200px){
+
+        /*-------------------------------------------HEADER------------------------------------------*/
     
+        #page-name{
+            font-size: 17.5em;
+            -webkit-text-stroke: 1.5px #E7EBF6;
+        }
+        
+        /*Desktop Nav*/
+    
+        nav{
+            display: block;
+        }
+        
+        .drop-menu{
+            display: none;
+        }
+
+    
+         /*--------------------------------------------BODY-------------------------------------------*/
+
+         #genesis{
+            font-size: 4em;
+         }
+    
+         #call-to-action{
+            margin-left: 25%;
+            margin-right: 25%;  
+        }
+
+        .brand-info{
+            margin-left: 15%;
+            margin-right: 15%; 
+            font-size: 2em;
+
+        }
+        
+
+        /*Service Options*/
+    
+        .service-name{
+            font-size: 2em;
+        }
+    
+        .services{
+            display: grid;
+            grid-template-rows: repeat(1, 1fr);
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1.5%;
+            margin: 1.5%;
+        
+        }
+    
+        .serive-description{
+            font-size: 150%;
+        }
+    
+         /*-------------------------------------------FOOTER------------------------------------------*/
+    
+   
+       }
